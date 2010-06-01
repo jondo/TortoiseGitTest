@@ -1,8 +1,8 @@
-int Segmentation::ignore(int pos, int type)
+int Segmentation::ignore(int position, int category)
 {
-    if(print[pos] == type) return 0;
+    if(print[position] == category) return 0;
 
-    print[pos]  = type;
-    output[pos] = table(type);
+    print[position]  = category;
+    output[position] = table(category);
     return 1;
 }
